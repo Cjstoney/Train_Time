@@ -27,9 +27,16 @@ $(document).ready(function(){
     // on click function for submit button
     $('#submit-button').on('click',function(event){
         event.preventDefault();
-        trainTime = $('#train-time').val();
+        trainName = $('#train-time').val();
         destination = $('#destination').val();
         firstTrainTime = $('#first-train-time').val();
         frequency = $('#frequency').val();
+
+        database.ref().push({
+            time: trainTime,
+            destination: destination,
+            firstTrain: firstTrainTime,
+            frequency: frequency,
+        })
     })
 })
