@@ -43,6 +43,12 @@ $(document).ready(function(){
             firstTrain: firstTrainTime,
             frequency: frequency,
         })
+
+        $('#train-name').val("");
+        $('#destination').val("");
+        $('#first-train-time').val("");
+        $('#frequency').val("");
+  
     })
 
     database.ref().on("child_added", function(childSnapshot){
