@@ -1,0 +1,36 @@
+*{
+    color: whitesmoke;
+}
+body{
+    background: black;
+}
+
+#schedule_box{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+#header_container{
+    background: #32383E;
+    text-align: center;
+}
+
+#card-color_1{
+    background: #32383E;
+    text-align:center;
+}
+
+#card-color_2{
+    background: #32383E;
+}
+
+div .card-header{
+    font-size: 20px;
+    text-align: center;
+}
+
+#submit-button{
+    background: #DB1D60;
+    margin: 5px;
+    float: right;
+}

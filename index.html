@@ -17,7 +17,7 @@
             <div class="col-lg-1">
             </div>
             <div class="col-lg-10">
-                <div class="jumbotron jumbotron-fluid">
+                <div id="header_container" class="jumbotron jumbotron-fluid">
                     <div class="container">
                         <h1 class="display-4">Train Schedule</h1>
                         <p class="lead">Choo Choo Choo</p>
@@ -27,11 +27,11 @@
                 <div class="col-lg-1">
                 </div>
             </div>
-            <div class="row">
+            <div id="schedule_box" class="row">
                 <div class="col-lg-1">
                 </div>
                 <div class="col-lg-10">
-                    <div class="card">
+                    <div id="card-color_1" class="card mb-4">
                         <div class="card-header">
                             Current Train Schedule
                         </div>
@@ -42,6 +42,7 @@
                                 <th scope="col">Destination</th>
                                 <th scope="col">First Train Time</th>
                                 <th scope="col">Frequency</th>
+                                <th scope="col">Mintues Away</th>
                               </tr>
                             </thead>
                             <tbody id="table-body">
@@ -57,7 +58,7 @@
                 <div class="col-lg-1">
                 </div>
                 <div class="col-lg-10">
-                    <div class="card">
+                    <div id="card-color_2" class="card mb-4">
                         <div class="card-header">
                             Add Train
                         </div>
@@ -78,7 +79,7 @@
                                 <label for="monthRate">Frequency (Min)</label>
                                 <input type="text" class="form-control" id="frequency" placeholder="00">
                             </div>
-                            <button type="submit" id="submit-button" class="btn btn-primary">Submit</button>
+                            <button type="submit" id="submit-button" class="btn ">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -90,6 +91,8 @@
         
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://momentjs.com/downloads/moment.js"></script>
+
         <script src="assets/javascript/app.js"></script>
 
 </body>
